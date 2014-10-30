@@ -1,0 +1,9 @@
+stack A would use array indices 0, 3, 6, 9, 12...
+stack B would use array indices 1, 4, 7, 10, 13...
+stack C would use array indices 2, 5, 8, 11, 14...
+
+We would use indices 0, 1, and 2 to keep track of the index of the last element in each
+respective stack. They would be initialized to 0, 1, and 2 respectively. When we want to
+push an element onto the stack, we would look at the value at index 0, 1, or 2, increment
+it by 3, then store the value at that index location. To pop, we would look at the value
+at index 0, 1, or 2, retrieve the value at that index, then decrement by 3.
